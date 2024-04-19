@@ -1,0 +1,17 @@
+token: 0qifxvusrf8lgbvt1enhji2y1xc6h51j
+advertise-address: 10.9.41.12
+server: https://raca.stg.drc.local:9345
+node-ip: 10.9.41.12
+cni:
+  - none
+disable-kube-proxy: true
+node-taint:
+  - "node-role.kubernetes.io/control-plane=true:NoSchedule"
+tls-san:
+  - raca.stg.drc.local
+  - 127.0.0.1
+  - 10.9.41.12
+  - 10.9.41.5
+disable:
+  - rke2-canal
+  - rke2-ingress-nginx
