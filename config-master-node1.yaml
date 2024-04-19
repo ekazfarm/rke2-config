@@ -1,0 +1,16 @@
+token: 0qifxvusrf8lgbvt1enhji2y1xc6h51j
+advertise-address: 10.9.41.11
+node-ip: 10.9.41.11
+cni:
+  - none
+disable-kube-proxy: true
+node-taint:
+  - "node-role.kubernetes.io/control-plane=true:NoSchedule"
+tls-san:
+  - raca.stg.drc.local
+  - 127.0.0.1
+  - 10.9.41.11
+  - 10.9.41.5
+disable:
+  - rke2-canal
+  - rke2-ingress-nginx
